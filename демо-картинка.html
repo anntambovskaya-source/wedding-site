@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Демо · Картинка — 2 варианта</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --cream: #FAF6F0;
+  --ink: #2C2C2C;
+  --ink-faint: #9A9590;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-weight: 300;
+  padding: 40px 20px 80px;
+}
+.variant {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.variant-label {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 20px;
+}
+.hero-illustration {
+  width: clamp(280px, 50vw, 420px);
+}
+.v-with {
+  mix-blend-mode: multiply;
+  filter: brightness(1.12);
+}
+hr {
+  border: none;
+  border-top: 1px solid #E0D6CA;
+  max-width: 480px;
+  margin: 0 auto 40px;
+}
+</style>
+</head>
+<body>
+
+<div class="variant">
+  <p class="variant-label">Без затемнения (как сейчас на сайте)</p>
+  <img src="edited_background.png" alt="" class="hero-illustration">
+</div>
+
+<hr>
+
+<div class="variant">
+  <p class="variant-label">С затемнением (mix-blend-mode + brightness)</p>
+  <img src="edited_background.png" alt="" class="hero-illustration v-with">
+</div>
+
+</body>
+</html>

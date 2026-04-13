@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Демо · Блок «Спасибо»</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --cream:        #FAF6F0;
+  --cream-dark:   #F0EBE3;
+  --ink:          #2C2C2C;
+  --ink-light:    #5A5A5A;
+  --ink-faint:    #9A9590;
+  --scarlet:      #C83C2C;
+  --serif:        'Cormorant Garamond', Georgia, serif;
+  --sans:         'Montserrat', sans-serif;
+}
+body {
+  font-family: var(--sans);
+  background: var(--cream);
+  color: var(--ink);
+  font-weight: 300;
+  padding: 60px 24px;
+}
+
+.variant-header {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 60px auto 16px;
+  max-width: 520px;
+  border-top: 1px solid var(--cream-dark);
+  padding-top: 24px;
+}
+.variant-header:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+
+.rsvp-form {
+  max-width: 520px; margin: 0 auto;
+  background: var(--white, #fff);
+  border: 1.5px solid var(--cream-dark);
+  border-radius: 16px;
+  padding: 36px 32px;
+}
+
+/* Текущий вариант (красная) */
+.form-success {
+  text-align: center; padding: 48px 24px;
+}
+.form-success .check {
+  width: 56px; height: 56px; margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.form-success .check svg {
+  width: 28px; height: 28px;
+  fill: none; stroke-width: 2.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.form-success h3 {
+  font-family: var(--serif);
+  font-size: 24px; font-weight: 400; margin-bottom: 8px;
+}
+.form-success p { color: var(--ink-light); font-size: 14px; }
+
+/* === Текущий: красный === */
+.v-current .check { background: #F5D5D0; }
+.v-current .check svg { stroke: var(--scarlet); }
+
+/* === Новый: серый (как hover в анкете) === */
+.v-new .check { background: #F2F1F0; border: 1.5px solid #999; }
+.v-new .check svg { stroke: #5A5A5A; }
+</style>
+</head>
+<body>
+
+<div class="variant-header">Сейчас (красная галочка)</div>
+<div class="rsvp-form">
+  <div class="form-success v-current">
+    <div class="check">
+      <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h3>Спасибо!</h3>
+    <p>Мы получили ваш ответ. Ждём вас с нетерпением!</p>
+  </div>
+</div>
+
+<div class="variant-header">Новый вариант (в цвет hover-эффекта анкеты)</div>
+<div class="rsvp-form">
+  <div class="form-success v-new">
+    <div class="check">
+      <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h3>Спасибо!</h3>
+    <p>Мы получили ваш ответ. Ждём вас с нетерпением!</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анна & Александр Шлыковы — 21.07.26</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="https://theluckyones.netlify.app/heart.png">
+<link rel="apple-touch-icon" href="https://theluckyones.netlify.app/heart.png">
+
+<!-- Open Graph / превью ссылки в мессенджерах -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://theluckyones.netlify.app/">
+<meta property="og:title" content="Аня & Саша · 21.07.2026">
+<meta property="og:description" content="Мы женаты! И хотим отпраздновать это с вами ♥️ Все подробности о месте, времени и других важных деталях — внутри.">
+<meta property="og:image" content="https://theluckyones.netlify.app/venue.png">
+<meta property="og:image:alt" content="Аня и Саша · свадьба в яблоневом саду">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Аня & Саша · 21.07.2026">
+<meta name="twitter:description" content="Мы женаты! И хотим отпраздновать это с вами ♥️ Все подробности о месте, времени и других важных деталях — внутри.">
+<meta name="twitter:image" content="https://theluckyones.netlify.app/venue.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'Hello January';
+  src: url('HelloJanuary.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+</style>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --cream:        #FAF6F0;
+  --cream-dark:   #F0EBE3;
+  --ink:          #2C2C2C;
+  --ink-light:    #5A5A5A;
+  --ink-faint:    #9A9590;
+  --scarlet:      #C83C2C;
+  --scarlet-light:#E8685A;
+  --scarlet-pale: #F5D5D0;
+  --scarlet-bg:   #FDF0EE;
+  --white:        #FFFFFF;
+  --serif:        'Cormorant Garamond', 'Georgia', serif;
+  --sans:         'Montserrat', 'Helvetica Neue', sans-serif;
+  --hw:           'Hello January', cursive;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(250, 246, 240, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+.nav.hidden { transform: translateY(-100%); }
+.nav-inner {
+  max-width: 800px; margin: 0 auto;
+  padding: 14px 24px;
+  display: flex; justify-content: center;
+  gap: 28px; flex-wrap: wrap;
+}
+.nav a {
+  text-decoration: none; color: var(--ink-light);
+  font-size: 11px; letter-spacing: 1.5px;
+  text-transform: uppercase; font-weight: 400;
+  transition: color 0.2s;
+}
+.nav a:hover { color: var(--scarlet); }
+
+/* ===== SECTIONS ===== */
+section { padding: 80px 24px; }
+.section-narrow { max-width: 680px; margin: 0 auto; }
+
+.section-label {
+  font-size: 11px; letter-spacing: 2.5px;
+  text-transform: uppercase; color: var(--ink-faint);
+  font-weight: 400; margin-bottom: 10px;
+}
+.section-title {
+  font-family: var(--hw);
+  font-size: clamp(60px, 10vw, 88px);
+  font-weight: 400;
+  color: var(--ink); margin-bottom: 20px;
+}
+.section-text {
+  font-size: 15px; color: var(--ink-light);
+  line-height: 1.8; margin-bottom: 32px;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  display: flex; align-items: center; justify-content: center;
+  padding: 12px 0; color: var(--ink-faint);
+}
+.divider svg {
+  height: 40px; stroke: var(--ink);
+  opacity: 0.3;
+}
+
+/* ===== DECORATIVE ACCENTS ===== */
+.deco {
+  display: flex; justify-content: center; align-items: center;
+  pointer-events: none;
+}
+.deco svg {
+  overflow: visible;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 100px 24px 80px;
+  position: relative;
+}
+.hero-label {
+  font-size: clamp(11px, 2vw, 13px);
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 400;
+  margin-bottom: 32px;
+}
+.hero-tagline {
+  font-family: var(--serif);
+  font-size: clamp(42px, 8vw, 72px);
+  font-weight: 300;
+  color: var(--ink); line-height: 1.15;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.hero-illustration {
+  width: clamp(280px, 50vw, 420px);
+  margin-bottom: 32px;
+}
+
+/* ===== MUSIC ===== */
+.music-section {
+  text-align: center;
+  padding: 20px 24px 40px;
+}
+@media (max-width: 600px) {
+  .music-section { padding: 20px 8px 40px; }
+}
+.music-toggle {
+  background: var(--cream);
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 560px;
+  font-family: var(--sans);
+  transition: opacity 0.2s, transform 0.2s;
+  isolation: isolate;
+}
+.music-toggle:hover { opacity: 0.7; }
+.music-toggle:active { transform: scale(0.97); }
+.music-toggle img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: darken;
+}
+.music-toggle .music-icon-on { display: none; }
+.music-toggle.playing .music-icon-off { display: none; }
+.music-toggle.playing .music-icon-on { display: block; }
+.music-label {
+  font-size: 15px;
+  color: var(--ink-light);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-top: 1.8em;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.hero-subtitle {
+  font-family: var(--serif);
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--ink-light); font-weight: 400;
+  margin-bottom: 48px;
+}
+.hero-date {
+  font-family: var(--hw);
+  font-size: clamp(42px, 8vw, 66px);
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: 4px;
+}
+.hero-date span {
+  font-family: var(--serif);
+  color: var(--scarlet);
+  margin: 0 4px;
+  opacity: 0.6;
+  font-size: 0.7em;
+}
+.hero-scroll {
+  position: absolute; bottom: 32px; left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+.hero-scroll svg {
+  width: 24px; height: 24px; stroke: var(--ink-faint);
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ===== VENUE ===== */
+.venue { text-align: center; }
+.venue-name {
+  font-family: var(--serif);
+  font-size: clamp(20px, 3.5vw, 28px);
+  font-weight: 400; color: var(--ink);
+  margin-bottom: 24px;
+}
+.venue-name .sep {
+  color: var(--ink-faint); margin: 0 8px;
+}
+.venue-illustration {
+  width: 100%;
+  display: block; margin: 32px auto;
+  mix-blend-mode: multiply;
+}
+.map-wrapper {
+  margin-top: 28px;
+  position: relative;
+  max-width: 100%;
+  cursor: pointer;
+}
+.map-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  opacity: 0.25;
+  /* hand-drawn sketch effect */
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='2' width='196' height='196' rx='12' fill='none' stroke='black' stroke-width='3' stroke-dasharray='8 3 2 3'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='2' width='196' height='196' rx='12' fill='none' stroke='black' stroke-width='3' stroke-dasharray='8 3 2 3'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.map-sketch-border {
+  position: relative;
+  border: 1.5px dashed var(--ink-faint);
+  border-radius: 12px;
+  padding: 4px;
+  background: var(--cream);
+}
+.map-container {
+  border-radius: 8px; overflow: hidden;
+  height: 200px;
+  position: relative;
+}
+.map-container iframe {
+  width: 100%; height: 100%; border: none; display: block;
+}
+.map-overlay {
+  position: absolute; inset: 0;
+  z-index: 2; cursor: pointer;
+}
+
+/* ===== JOCKEY BACKGROUND ===== */
+.timeline-section {
+  position: relative;
+  overflow: hidden;
+}
+.jockey-bg {
+  display: block;
+  width: 100%;
+  margin: 16px auto 0;
+  mix-blend-mode: multiply;
+  opacity: 0.18;
+  pointer-events: none;
+  filter: grayscale(30%) brightness(1.1);
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  margin: 40px 0 0 24px;
+  border-left: 1.5px solid var(--cream-dark);
+  padding-left: 32px;
+}
+.timeline-item {
+  position: relative; margin-bottom: 36px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute; left: -40px; top: 4px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--scarlet); border: none;
+}
+.timeline-time {
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--scarlet); font-weight: 400; margin-bottom: 4px;
+}
+.timeline-title {
+  font-family: var(--serif);
+  font-size: 20px; font-weight: 400; color: var(--ink);
+}
+.timeline-desc {
+  font-size: 13px; color: var(--ink-faint);
+  margin-top: 2px; font-style: italic;
+}
+
+/* ===== DRESSCODE ===== */
+.dresscode { text-align: center; }
+.dc-text {
+  font-size: 15px; color: var(--ink-light);
+  line-height: 1.8; max-width: 480px;
+  margin: 0 auto 32px;
+}
+.palette-group {
+  display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 14px;
+  margin-bottom: 20px;
+}
+.palette-dot {
+  width: 48px; height: 48px; border-radius: 50%;
+  border: 1.5px solid rgba(0,0,0,0.06);
+  transition: transform 0.2s; cursor: default;
+}
+.palette-dot:hover { transform: scale(1.15); }
+.palette-divider {
+  width: 60px; height: 1px;
+  background: rgba(44,44,44,0.12);
+  margin: 10px auto 20px;
+}
+.btn-outline {
+  display: inline-block; padding: 14px 32px; margin-top: 48px;
+  border: 1.5px solid var(--scarlet); color: var(--scarlet);
+  border-radius: 8px; text-decoration: none;
+  font-size: 12px; letter-spacing: 2px;
+  text-transform: uppercase; font-weight: 400;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer; background: transparent;
+  font-family: var(--sans);
+}
+.btn-outline:hover {
+  background: var(--scarlet); color: var(--cream);
+}
+
+/* ===== DETAILS ===== */
+.details { text-align: center; }
+.details-text {
+  font-family: var(--serif);
+  font-size: clamp(18px, 3vw, 22px); font-weight: 400;
+  color: var(--ink-light); line-height: 1.9;
+  max-width: 520px; margin: 0 auto;
+}
+.details-symbol {
+  font-size: 40px; color: var(--scarlet);
+  margin: 36px 0; opacity: 0.6;
+}
+.details-note {
+  font-family: var(--serif);
+  font-size: clamp(17px, 2.8vw, 21px); font-weight: 400;
+  color: var(--ink-light); line-height: 1.9;
+  max-width: 520px; margin: 0 auto;
+}
+
+/* ===== RSVP FORM ===== */
+.rsvp-form {
+  margin-top: 40px; background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 16px; padding: 40px 32px;
+}
+.form-group { margin-bottom: 28px; }
+.form-label {
+  display: block; font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; font-weight: 400;
+  color: var(--ink-light); margin-bottom: 12px;
+}
+.form-input {
+  width: 100%; padding: 13px 16px;
+  border: 1.5px solid var(--cream-dark); border-radius: 8px;
+  font-family: var(--sans); font-size: 14px; font-weight: 300;
+  color: var(--ink); background: var(--cream);
+  outline: none; transition: border-color 0.2s;
+  -webkit-appearance: none;
+}
+.form-input:focus { border-color: #5A5A5A; }
+
+.radio-group, .checkbox-group {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.radio-option, .checkbox-option {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  border: 1.5px solid var(--cream-dark); border-radius: 8px;
+  cursor: pointer; transition: border-color 0.2s, background 0.2s;
+  font-size: 13px; color: var(--ink-light); background: var(--cream);
+}
+.radio-option:hover, .checkbox-option:hover {
+  border-color: #999; background: #F2F1F0;
+}
+.radio-option input, .checkbox-option input {
+  accent-color: #5A5A5A; width: 16px; height: 16px; flex-shrink: 0;
+}
+.radio-option label, .checkbox-option label { cursor: pointer; }
+
+/* Longer menu options — full width */
+.menu-group { flex-direction: column; }
+.menu-group .radio-option {
+  width: 100%; padding: 14px 18px;
+}
+
+.form-note {
+  font-size: 12px; color: var(--ink-faint);
+  font-style: italic; margin-top: 6px;
+}
+.btn-submit {
+  display: block; width: 100%; padding: 16px;
+  background: var(--scarlet); color: var(--white);
+  border: none; border-radius: 8px;
+  font-family: var(--sans); font-size: 13px;
+  letter-spacing: 2px; text-transform: uppercase; font-weight: 500;
+  cursor: pointer; transition: background 0.2s, transform 0.1s;
+  margin-top: 12px;
+}
+.btn-submit:hover { background: var(--scarlet-light); }
+.btn-submit:active { transform: scale(0.98); }
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-success {
+  display: none; text-align: center; padding: 48px 24px;
+}
+.form-success.show { display: block; }
+.form-success .check {
+  width: 56px; height: 56px; margin: 0 auto 20px;
+  background: #F2F1F0; border: 1.5px solid #999; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.form-success .check svg {
+  width: 28px; height: 28px; stroke: #5A5A5A;
+}
+.form-success h3 {
+  font-family: var(--serif);
+  font-size: 24px; font-weight: 400; margin-bottom: 8px;
+}
+.form-success p { color: var(--ink-light); font-size: 14px; }
+
+/* ===== CONTACTS ===== */
+.contacts { text-align: center; padding-bottom: 40px; }
+.contacts-intro {
+  font-size: 15px; color: var(--ink-light);
+  line-height: 1.8; max-width: 480px;
+  margin: 0 auto 32px;
+}
+.contact-card {
+  padding: 32px;
+  border: 1px solid var(--cream-dark); border-radius: 12px;
+  max-width: 400px; margin: 0 auto;
+  background: var(--white);
+}
+.contact-role {
+  font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--ink-faint);
+  margin-bottom: 8px;
+}
+.contact-name {
+  font-family: var(--serif); font-size: 22px; font-weight: 400;
+}
+.contact-links {
+  margin-top: 12px; display: flex;
+  justify-content: center; gap: 16px;
+}
+.contact-links a {
+  color: var(--scarlet); text-decoration: none;
+  font-size: 14px; display: flex; align-items: center; gap: 6px;
+  transition: opacity 0.2s;
+}
+.contact-links a:hover { opacity: 0.7; }
+.contact-placeholder {
+  color: var(--ink-faint); font-style: italic;
+  font-size: 13px; margin-top: 8px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center; padding: 24px 24px 40px;
+}
+.footer-names {
+  font-family: var(--hw);
+  font-size: clamp(38px, 6.5vw, 56px);
+  font-weight: 400;
+}
+.footer-heart {
+  margin-top: 20px;
+}
+.heart-icon, .footer-heart {
+  opacity: 1;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  section { padding: 60px 20px; }
+  .nav-inner { gap: 16px; padding: 12px 16px; }
+  .nav a { font-size: 10px; letter-spacing: 1px; }
+  .timeline { margin-left: 12px; }
+  .radio-group, .checkbox-group { flex-direction: column; }
+  .hero { padding: 80px 20px 60px; }
+  .rsvp-form { padding: 28px 20px; }
+  .palette-group { gap: 10px; }
+  .palette-dot { width: 40px; height: 40px; }
+}
+
+/* ===== Попап с видео при клике на «план» ===== */
+.plan-link {
+  text-decoration: none;
+  border-bottom: 1.5px dashed var(--ink-light);
+  cursor: pointer;
+  color: inherit;
+  transition: border-color 0.2s;
+}
+.plan-link:hover {
+  border-color: var(--scarlet);
+}
+.meme-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.meme-overlay.show {
+  display: flex;
+}
+.meme-overlay video {
+  max-width: 400px;
+  width: 85vw;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#venue">Место</a>
+    <a href="#schedule">План дня</a>
+    <a href="#dresscode">Дресс-код</a>
+    <a href="#details">Детали</a>
+    <a href="#rsvp">Анкета</a>
+    <a href="#contacts">Контакты</a>
+  </div>
+</nav>
+
+<!-- ==================== ЭКРАН 1: HERO ==================== -->
+<section class="hero" id="hero">
+  <h1 class="hero-tagline fade-in">Мы же на ты</h1>
+  <img src="clean_wall.png" alt="Анна и Александр" class="hero-illustration fade-in">
+  <!-- hand-drawn heart accent -->
+  <img src="heart.png?v=2" alt="" class="deco fade-in" style="width:28px; margin-bottom:20px; mix-blend-mode:multiply;">
+  <p class="hero-subtitle fade-in">И хотим отпраздновать это с вами</p>
+  <div class="hero-date fade-in">21 <span>—</span> 07 <span>—</span> 26</div>
+</section>
+
+<!-- Botanical Divider -->
+<div class="divider">
+  <svg viewBox="0 0 120 40" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 20 Q25 20 45 20" stroke-width="0.8"/>
+    <path d="M18 20 Q22 13 28 15" stroke-width="1"/>
+    <path d="M28 20 Q32 13 38 15" stroke-width="1"/>
+    <path d="M18 20 Q22 27 28 25" stroke-width="1"/>
+    <path d="M28 20 Q32 27 38 25" stroke-width="1"/>
+    <circle cx="60" cy="20" r="3" fill="var(--scarlet)" stroke="none" opacity="0.5"/>
+    <path d="M75 20 Q95 20 110 20" stroke-width="0.8"/>
+    <path d="M82 20 Q86 13 92 15" stroke-width="1"/>
+    <path d="M92 20 Q96 13 102 15" stroke-width="1"/>
+    <path d="M82 20 Q86 27 92 25" stroke-width="1"/>
+    <path d="M92 20 Q96 27 102 25" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ==================== МУЗЫКА ==================== -->
+<section class="music-section">
+  <button type="button" class="music-toggle fade-in" id="musicToggle" aria-label="Включить нашу песню">
+    <img class="music-icon-off" src="music-off.png" alt="">
+    <img class="music-icon-on" src="music-on.png" alt="">
+    <span class="music-label">Включить нашу песню</span>
+  </button>
+  <audio id="musicAudio" loop preload="none">
+    <source src="lucky.mp3" type="audio/mpeg">
+  </audio>
+</section>
+
+<!-- Botanical Divider -->
+<div class="divider">
+  <svg viewBox="0 0 120 40" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left branch -->
+    <path d="M10 20 Q25 20 45 20" stroke-width="0.8"/>
+    <path d="M18 20 Q22 13 28 15" stroke-width="1"/>
+    <path d="M28 20 Q32 13 38 15" stroke-width="1"/>
+    <path d="M18 20 Q22 27 28 25" stroke-width="1"/>
+    <path d="M28 20 Q32 27 38 25" stroke-width="1"/>
+    <!-- center -->
+    <circle cx="60" cy="20" r="3" fill="var(--scarlet)" stroke="none" opacity="0.5"/>
+    <!-- right branch -->
+    <path d="M75 20 Q95 20 110 20" stroke-width="0.8"/>
+    <path d="M82 20 Q86 13 92 15" stroke-width="1"/>
+    <path d="M92 20 Q96 13 102 15" stroke-width="1"/>
+    <path d="M82 20 Q86 27 92 25" stroke-width="1"/>
+    <path d="M92 20 Q96 27 102 25" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ==================== ЭКРАН 2: МЕСТО ==================== -->
+<section class="venue" id="venue">
+  <div class="section-narrow fade-in">
+    <p class="section-label">Место празднования</p>
+    <div class="venue-name">Чехов APi <span class="sep">·</span> Яблоневый сад</div>
+    <img src="venue.png" alt="Площадка в яблоневом саду" class="venue-illustration fade-in">
+    <div class="map-wrapper fade-in">
+      <div class="map-sketch-border">
+        <div class="map-container">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.394474%2C55.150573&z=15&l=map&pt=37.394474%2C55.150573%2Cpm2rdl"
+            allowfullscreen>
+          </iframe>
+          <a href="https://yandex.com/maps/-/CPBWi60E" target="_blank" rel="noopener" class="map-overlay" aria-label="Открыть в Яндекс Картах"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Botanical Divider -->
+<div class="divider">
+  <svg viewBox="0 0 120 40" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left branch -->
+    <path d="M10 20 Q25 20 45 20" stroke-width="0.8"/>
+    <path d="M18 20 Q22 13 28 15" stroke-width="1"/>
+    <path d="M28 20 Q32 13 38 15" stroke-width="1"/>
+    <path d="M18 20 Q22 27 28 25" stroke-width="1"/>
+    <path d="M28 20 Q32 27 38 25" stroke-width="1"/>
+    <!-- center -->
+    <circle cx="60" cy="20" r="3" fill="var(--scarlet)" stroke="none" opacity="0.5"/>
+    <!-- right branch -->
+    <path d="M75 20 Q95 20 110 20" stroke-width="0.8"/>
+    <path d="M82 20 Q86 13 92 15" stroke-width="1"/>
+    <path d="M92 20 Q96 13 102 15" stroke-width="1"/>
+    <path d="M82 20 Q86 27 92 25" stroke-width="1"/>
+    <path d="M92 20 Q96 27 102 25" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ==================== ЭКРАН 3: ПЛАН ДНЯ ==================== -->
+<section class="timeline-section" id="schedule">
+  <div class="section-narrow">
+    <div class="fade-in" style="text-align:center;">
+      <p class="section-label">План дня</p>
+      <h2 class="section-title">Что нас ждет</h2>
+      <p class="section-text" style="margin-bottom:8px;">У нас есть <span class="plan-link" id="planLink1">план</span>, и мы будем его придерживаться</p>
+    </div>
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="timeline-time">15:00</div>
+        <div class="timeline-title">Заселение</div>
+        <div class="timeline-desc">Осмотр владений и освежение причесок</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">15:30</div>
+        <div class="timeline-title">Сбор гостей</div>
+        <div class="timeline-desc">Знакомство тех, кто ещё не знаком</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">17:00</div>
+        <div class="timeline-title">Церемония</div>
+        <div class="timeline-desc">Или что-то другое — мы пока не придумали</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18:00</div>
+        <div class="timeline-title">Ужин в саду</div>
+        <div class="timeline-desc">Праздничный ужин и открытый микрофон</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">20:00</div>
+        <div class="timeline-title">Вечеринка</div>
+        <div class="timeline-desc">Танцы, музыка и веселье до <s>поздней ночи</s> часа тишины</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">22:00</div>
+        <div class="timeline-title">Песни под гитару</div>
+        <div class="timeline-desc">Если Юлечка и Егнат согласятся взять с собой гитары</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Попап с видео для «план» -->
+<div class="meme-overlay" id="memeOverlay">
+  <video id="memeVideo1" controls playsinline><source src="tactics.mp4" type="video/mp4"></video>
+</div>
+
+<!-- Попап с видео для «скорее всего» -->
+<div class="meme-overlay" id="memeOverlay2">
+  <video id="memeVideo2" controls playsinline><source src="ross-hat.mp4" type="video/mp4"></video>
+</div>
+
+<!-- Botanical Divider -->
+<div class="divider">
+  <svg viewBox="0 0 120 40" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left branch -->
+    <path d="M10 20 Q25 20 45 20" stroke-width="0.8"/>
+    <path d="M18 20 Q22 13 28 15" stroke-width="1"/>
+    <path d="M28 20 Q32 13 38 15" stroke-width="1"/>
+    <path d="M18 20 Q22 27 28 25" stroke-width="1"/>
+    <path d="M28 20 Q32 27 38 25" stroke-width="1"/>
+    <!-- center -->
+    <circle cx="60" cy="20" r="3" fill="var(--scarlet)" stroke="none" opacity="0.5"/>
+    <!-- right branch -->
+    <path d="M75 20 Q95 20 110 20" stroke-width="0.8"/>
+    <path d="M82 20 Q86 13 92 15" stroke-width="1"/>
+    <path d="M92 20 Q96 13 102 15" stroke-width="1"/>
+    <path d="M82 20 Q86 27 92 25" stroke-width="1"/>
+    <path d="M92 20 Q96 27 102 25" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ==================== ЭКРАН 4: ДРЕСС-КОД ==================== -->
+<section class="dresscode" id="dresscode">
+  <div class="section-narrow fade-in">
+    <p class="section-label">Дресс-код</p>
+    <h2 class="section-title">Что надеть</h2>
+    <p class="dc-text">
+      Мы не стали ограничиваться парой цветов — выбирайте любой оттенок из&nbsp;палитры ниже, который вам по&nbsp;душе.<br><br>А если хотите выбрать цвет, которого нет в палитре, — напишите невесте, и, <span class="plan-link" id="planLink2">скорее всего</span>, она даст добро :)<br><br>Единственная просьба — просим по возможности обойтись без ярких принтов. 
+    </p>
+    <!-- Группа 1: яркие, нежные, тёплые -->
+    <div class="palette-group">
+      <div class="palette-dot" style="background:#E8C0C0;" title="Нежно-розовый"></div>
+      <div class="palette-dot" style="background:#C87898;" title="Пыльная роза"></div>
+      <div class="palette-dot" style="background:#D65C80;" title="Яркий розовый"></div>
+      <div class="palette-dot" style="background:#782048;" title="Бургунди"></div>
+      <div class="palette-dot" style="background:#8070B0;" title="Лавандовый"></div>
+      <div class="palette-dot" style="background:#E86040;" title="Коралловый"></div>
+      <div class="palette-dot" style="background:#E8921A;" title="Шафрановый"></div>
+      <div class="palette-dot" style="background:#F0C030;" title="Подсолнечный"></div>
+      <div class="palette-dot" style="background:#FFEEBC;" title="Сливочный"></div>
+      <div class="palette-dot" style="background:#A4BC38;" title="Оливково-лаймовый"></div>
+    </div>
+    <div class="palette-divider"></div>
+    <!-- Группа 2: сдержанные, тёмные, нейтральные -->
+    <div class="palette-group">
+      <div class="palette-dot" style="background:#EDE8DC;" title="Кремовый"></div>
+      <div class="palette-dot" style="background:#D9C8BA;" title="Шампань"></div>
+      <div class="palette-dot" style="background:#C0A898;" title="Нюд"></div>
+      <div class="palette-dot" style="background:#6B3A2A;" title="Шоколадный"></div>
+      <div class="palette-dot" style="background:#8FA89A;" title="Шалфей"></div>
+      <div class="palette-dot" style="background:#7A9870;" title="Эвкалипт"></div>
+      <div class="palette-dot" style="background:#1E5C40;" title="Тёмно-зелёный"></div>
+      <div class="palette-dot" style="background:#B4CADA;" title="Нежно-голубой"></div>
+      <div class="palette-dot" style="background:#2C3E60;" title="Тёмно-синий"></div>
+      <div class="palette-dot" style="background:#252220; border-color:rgba(0,0,0,0.15);" title="Чёрный"></div>
+    </div>
+    <button class="btn-outline" id="outfitsBtn">Примеры образов</button>
+  </div>
+</section>
+
+<!-- Botanical Divider -->
+<div class="divider">
+  <svg viewBox="0 0 120 40" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left branch -->
+    <path d="M10 20 Q25 20 45 20" stroke-width="0.8"/>
+    <path d="M18 20 Q22 13 28 15" stroke-width="1"/>
+    <path d="M28 20 Q32 13 38 15" stroke-width="1"/>
+    <path d="M18 20 Q22 27 28 25" stroke-width="1"/>
+    <path d="M28 20 Q32 27 38 25" stroke-width="1"/>
+    <!-- center -->
+    <circle cx="60" cy="20" r="3" fill="var(--scarlet)" stroke="none" opacity="0.5"/>
+    <!-- right branch -->
+    <path d="M75 20 Q95 20 110 20" stroke-width="0.8"/>
+    <path d="M82 20 Q86 13 92 15" stroke-width="1"/>
+    <path d="M92 20 Q96 13 102 15" stroke-width="1"/>
+    <path d="M82 20 Q86 27 92 25" stroke-width="1"/>
+    <path d="M92 20 Q96 27 102 25" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ==================== ЭКРАН 5: ДЕТАЛИ ==================== -->
+<section class="details" id="details">
+  <div class="section-narrow fade-in">
+    <p class="section-label">Детали</p>
+    <h2 class="section-title">Важные моменты</h2>
+    <p class="details-text">
+      Пожалуйста, не&nbsp;ломайте голову над подарком. Ваши подарки в&nbsp;конвертах помогут нам осуществить мечту о&nbsp;свадебном путешествии.
+    </p>
+    <div class="details-symbol">&infin;</div>
+    <p class="details-text">
+      Если вы планировали подарить нам цветы&nbsp;— у&nbsp;нас есть идея получше. Нам было&nbsp;бы очень приятно получить бутылку вашего любимого вина или пластинку с&nbsp;любимой музыкой. Так после свадьбы мы&nbsp;будем вспоминать вас&nbsp;— за&nbsp;бокалом вина или под музыку, которую вы&nbsp;любите.
+    </p>
+    <div class="details-symbol">&infin;</div>
+    <p class="details-note">
+      Просим вас обойтись без криков «Горько!» и&nbsp;сборов «на мальчика и&nbsp;девочку» — из&nbsp;90-х мы берём только плейлист :)
+    </p>
+    <div class="details-symbol">&infin;</div>
+    <p class="details-text">
+      Если позволит погода, мы&nbsp;планируем провести большую часть праздника на&nbsp;улице. Советуем взять с&nbsp;собой что-то тёплое на&nbsp;вечер и&nbsp;удобную сменную обувь :)
+    </p>
+    <img src="chin-chin.png?v=2" alt="" class="chin-chin-img fade-in" style="width:100%; display:block; margin:32px auto 0; mix-blend-mode:multiply; filter:brightness(1.12);">
+  </div>
+</section>
+
+<!-- Botanical Divider -->
+<div class="divider">
+  <svg viewBox="0 0 120 40" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left branch -->
+    <path d="M10 20 Q25 20 45 20" stroke-width="0.8"/>
+    <path d="M18 20 Q22 13 28 15" stroke-width="1"/>
+    <path d="M28 20 Q32 13 38 15" stroke-width="1"/>
+    <path d="M18 20 Q22 27 28 25" stroke-width="1"/>
+    <path d="M28 20 Q32 27 38 25" stroke-width="1"/>
+    <!-- center -->
+    <circle cx="60" cy="20" r="3" fill="var(--scarlet)" stroke="none" opacity="0.5"/>
+    <!-- right branch -->
+    <path d="M75 20 Q95 20 110 20" stroke-width="0.8"/>
+    <path d="M82 20 Q86 13 92 15" stroke-width="1"/>
+    <path d="M92 20 Q96 13 102 15" stroke-width="1"/>
+    <path d="M82 20 Q86 27 92 25" stroke-width="1"/>
+    <path d="M92 20 Q96 27 102 25" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ==================== ЭКРАН 6: АНКЕТА ==================== -->
+<section class="rsvp" id="rsvp">
+  <div class="section-narrow">
+    <div class="fade-in" style="text-align:center;">
+      <p class="section-label">Анкета</p>
+      <h2 class="section-title">Ждем вас!</h2>
+      <p class="section-text" style="margin-bottom: 8px;">
+        Пожалуйста, заполните анкету, чтобы мы могли подготовить всё к вашему приезду.
+      </p>
+    </div>
+
+    <form class="rsvp-form fade-in" id="rsvpForm">
+
+      <!-- Имя -->
+      <div class="form-group">
+        <label class="form-label" for="f-name">Ваше имя и фамилия</label>
+        <input type="text" id="f-name" name="name" class="form-input" placeholder="Лосось Булкин" required>
+      </div>
+
+      <!-- Придёте? -->
+      <div class="form-group">
+        <label class="form-label">Вы придёте?</label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" name="attend" id="attend-yes" value="Да" required>
+            <label for="attend-yes">Да</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" name="attend" id="attend-no" value="Нет">
+            <label for="attend-no">Нет</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Меню -->
+      <div class="form-group">
+        <label class="form-label">Что будете есть?</label>
+        <div class="radio-group menu-group">
+          <div class="radio-option">
+            <input type="radio" name="menu" id="menu-seabass" value="Сибас" required>
+            <label for="menu-seabass">Сибас с ароматными травами и овощами</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" name="menu" id="menu-duck" value="Утка">
+            <label for="menu-duck">Утиная грудка в ягодном соусе с картофелем</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" name="menu" id="menu-beef" value="Говядина">
+            <label for="menu-beef">Медальоны из говядины с овощами-гриль</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Напитки -->
+      <div class="form-group">
+        <label class="form-label">Что будете пить?</label>
+        <p class="form-note">Можно выбрать несколько вариантов</p>
+        <div class="checkbox-group" style="margin-top: 10px;">
+          <div class="checkbox-option">
+            <input type="checkbox" name="drinks" id="drink-red" value="Красное вино">
+            <label for="drink-red">Красное вино</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" name="drinks" id="drink-white" value="Белое вино">
+            <label for="drink-white">Белое вино</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" name="drinks" id="drink-champagne" value="Шампанское">
+            <label for="drink-champagne">Шампанское</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" name="drinks" id="drink-gin" value="Джин">
+            <label for="drink-gin">Джин</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" name="drinks" id="drink-nonalc" value="Безалкогольное">
+            <label for="drink-nonalc">Безалкогольное</label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" id="submitBtn">Отправить ответ</button>
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+      </div>
+      <h3>Спасибо!</h3>
+      <p>Мы получили ваш ответ. Ждём вас с нетерпением!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Botanical Divider -->
+<div class="divider">
+  <svg viewBox="0 0 120 40" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left branch -->
+    <path d="M10 20 Q25 20 45 20" stroke-width="0.8"/>
+    <path d="M18 20 Q22 13 28 15" stroke-width="1"/>
+    <path d="M28 20 Q32 13 38 15" stroke-width="1"/>
+    <path d="M18 20 Q22 27 28 25" stroke-width="1"/>
+    <path d="M28 20 Q32 27 38 25" stroke-width="1"/>
+    <!-- center -->
+    <circle cx="60" cy="20" r="3" fill="var(--scarlet)" stroke="none" opacity="0.5"/>
+    <!-- right branch -->
+    <path d="M75 20 Q95 20 110 20" stroke-width="0.8"/>
+    <path d="M82 20 Q86 13 92 15" stroke-width="1"/>
+    <path d="M92 20 Q96 13 102 15" stroke-width="1"/>
+    <path d="M82 20 Q86 27 92 25" stroke-width="1"/>
+    <path d="M92 20 Q96 27 102 25" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ==================== ЭКРАН 7: КОНТАКТЫ ==================== -->
+<section class="contacts" id="contacts">
+  <div class="section-narrow fade-in">
+    <p class="section-label">Есть вопрос?</p>
+    <h2 class="section-title">Напишите нам</h2>
+    <p class="contacts-intro">
+      По любым вопросам пишите нам, а&nbsp;в&nbsp;день торжества — нашему координатору
+    </p>
+    <div class="contact-card">
+      <div class="contact-role">Координатор</div>
+      <div class="contact-name">Имя</div>
+      <div class="contact-placeholder">Телефон и Telegram появятся здесь позже</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-names">Аня, Саша,<br>Булка и Лосось</div>
+  <img src="heart.png?v=2" alt="" class="footer-heart" style="width:28px; mix-blend-mode:multiply;">
+</footer>
+
+<script>
+/* ===== Google Apps Script URL ===== */
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyuynIRyGiEH-AGXP2HDmZ09ZfttALpHymhqjeub1DH1mX1rqCiUiW_Z-vUGCYW9hlvWw/exec';
+
+/* ===== Scroll reveal ===== */
+const observer = new IntersectionObserver((entries) => {
+  for (const entry of entries) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  }
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+/* ===== Nav hide on scroll down, show on scroll up ===== */
+let lastScroll = 0;
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => {
+  const current = scrollY;
+  if (current > 200) {
+    nav.classList.toggle('hidden', current > lastScroll);
+  } else {
+    nav.classList.remove('hidden');
+  }
+  lastScroll = current;
+}, { passive: true });
+
+/* ===== Клик по всему «полю» опции анкеты выбирает её ===== */
+document.querySelectorAll('.radio-option, .checkbox-option').forEach(opt => {
+  opt.addEventListener('click', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'LABEL') return;
+    const input = opt.querySelector('input');
+    if (!input) return;
+    if (input.type === 'radio') {
+      input.checked = true;
+    } else {
+      input.checked = !input.checked;
+    }
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+  });
+});
+
+/* ===== Музыка: вкл/выкл ===== */
+const musicToggle = document.getElementById('musicToggle');
+const musicAudio = document.getElementById('musicAudio');
+const musicLabel = musicToggle.querySelector('.music-label');
+musicToggle.addEventListener('click', () => {
+  if (musicAudio.paused) {
+    musicAudio.play();
+    musicToggle.classList.add('playing');
+    musicLabel.textContent = 'Выключить музыку';
+    musicToggle.setAttribute('aria-label', 'Выключить музыку');
+  } else {
+    musicAudio.pause();
+    musicToggle.classList.remove('playing');
+    musicLabel.textContent = 'Включить нашу песню';
+    musicToggle.setAttribute('aria-label', 'Включить нашу песню');
+  }
+});
+
+/* ===== Form submit ===== */
+document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Отправляем...';
+
+  const fd = new FormData(e.target);
+  const obj = {};
+  const drinks = [];
+  for (const [key, val] of fd.entries()) {
+    if (key === 'drinks') drinks.push(val);
+    else obj[key] = val;
+  }
+  obj.drinks = drinks.join(', ');
+  obj.timestamp = new Date().toLocaleString('ru-RU');
+
+  if (!GOOGLE_SCRIPT_URL) {
+    console.log('RSVP:', obj);
+    showSuccess();
+    return;
+  }
+
+  try {
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST', mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(obj),
+    });
+    showSuccess();
+  } catch (err) {
+    console.error(err);
+    btn.disabled = false;
+    btn.textContent = 'Попробовать ещё раз';
+  }
+});
+
+function showSuccess() {
+  document.getElementById('rsvpForm').style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+}
+
+/* ===== Кнопка "Примеры образов" — открывает Pinterest ===== */
+document.getElementById('outfitsBtn')?.addEventListener('click', () => {
+  window.open('https://pin.it/6N18aEfgF', '_blank');
+});
+
+/* ===== Попап с видео при клике на «план»/«скорее всего» ===== */
+let musicWasPlaying = false;
+function pauseMusicForVideo() {
+  if (musicAudio && !musicAudio.paused) {
+    musicWasPlaying = true;
+    musicAudio.pause();
+  }
+}
+function resumeMusicAfterVideo() {
+  if (musicWasPlaying) {
+    musicAudio.play();
+    musicWasPlaying = false;
+  }
+}
+
+const memeOverlay = document.getElementById('memeOverlay');
+const memeVideo1 = document.getElementById('memeVideo1');
+document.getElementById('planLink1')?.addEventListener('click', () => {
+  pauseMusicForVideo();
+  memeOverlay.classList.add('show');
+});
+memeOverlay?.addEventListener('click', (e) => {
+  if (e.target === memeOverlay) {
+    memeOverlay.classList.remove('show');
+    memeVideo1.pause();
+    resumeMusicAfterVideo();
+  }
+});
+
+const memeOverlay2 = document.getElementById('memeOverlay2');
+const memeVideo2 = document.getElementById('memeVideo2');
+document.getElementById('planLink2')?.addEventListener('click', () => {
+  pauseMusicForVideo();
+  memeOverlay2.classList.add('show');
+});
+memeOverlay2?.addEventListener('click', (e) => {
+  if (e.target === memeOverlay2) {
+    memeOverlay2.classList.remove('show');
+    memeVideo2.pause();
+    resumeMusicAfterVideo();
+  }
+});
+</script>
+
+</body>
+</html>
